@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://autowarefoundation.github.io/autoware.universe/latest/simulator/fault_injection/">
+        <link rel="canonical" href="https://autowarefoundation.github.io/autoware.universe/latest/control/autoware_predicted_path_checker/">
       
       
-        <link rel="prev" href="../dummy_perception_publisher/">
+        <link rel="prev" href="../autoware_pid_longitudinal_controller/">
       
       
-        <link rel="next" href="../learning_based_vehicle_model/">
+        <link rel="next" href="../autoware_pure_pursuit/">
       
       <link rel="icon" href="../../docs/assets/images/autoware-foundation.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.20">
     
     
       
-        <title>fault_injection - Autoware Universe Documentation</title>
+        <title>Predicted Path Checker - Autoware Universe Documentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fault_injection" class="md-skip">
+        <a href="#predicted-path-checker" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              fault_injection
+              Predicted Path Checker
             
           </span>
         </div>
@@ -224,6 +224,8 @@
         
   
   
+    
+  
 
 
   
@@ -235,7 +237,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../control/autoware_autonomous_emergency_braking/" class="md-tabs__link">
+      <a href="../autoware_autonomous_emergency_braking/" class="md-tabs__link md-tabs__link--active">
         Control
       </a>
     </li>
@@ -401,8 +403,6 @@
         
   
   
-    
-  
 
 
   
@@ -414,7 +414,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../autoware_carla_interface/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../simulator/autoware_carla_interface/" class="md-tabs__link">
         Simulator
       </a>
     </li>
@@ -1595,16 +1595,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -1651,7 +1651,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Control
@@ -1686,7 +1686,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_autonomous_emergency_braking/">Autoware autonomous emergency braking</a>
+          <a href="../autoware_autonomous_emergency_braking/">Autoware autonomous emergency braking</a>
           
         </div>
       
@@ -1734,7 +1734,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_collision_detector/">Autoware collision detector</a>
+          <a href="../autoware_collision_detector/">Autoware collision detector</a>
           
         </div>
       
@@ -1782,14 +1782,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_control_validator/">Autoware control validator</a>
+          <a href="../autoware_control_performance_analysis/">Autoware control performance analysis</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
-          Autoware control validator
+          Autoware control performance analysis
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1830,14 +1830,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_external_cmd_selector/">Autoware external cmd selector</a>
+          <a href="../autoware_control_validator/">Autoware control validator</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_4">
           <span class="md-nav__icon md-icon"></span>
-          Autoware external cmd selector
+          Autoware control validator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1878,14 +1878,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_joy_controller/">Autoware joy controller</a>
+          <a href="../autoware_external_cmd_selector/">Autoware external cmd selector</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_5">
           <span class="md-nav__icon md-icon"></span>
-          Autoware joy controller
+          Autoware external cmd selector
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1926,14 +1926,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_lane_departure_checker/">Autoware lane departure checker</a>
+          <a href="../autoware_joy_controller/">Autoware joy controller</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
-          Autoware lane departure checker
+          Autoware joy controller
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1969,42 +1969,22 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_mpc_lateral_controller/">Autoware mpc lateral controller</a>
-          
-            <label for="__nav_2_7">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
+          <a href="../autoware_lane_departure_checker/">Autoware lane departure checker</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_7">
           <span class="md-nav__icon md-icon"></span>
-          Autoware mpc lateral controller
+          Autoware lane departure checker
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../control/autoware_mpc_lateral_controller/model_predictive_control_algorithm/" class="md-nav__link">
-        MPC Algorithm
-      </a>
-    </li>
-  
-
             
           
         </ul>
@@ -2037,22 +2017,42 @@
             
           
         
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_obstacle_collision_checker/">Autoware obstacle collision checker</a>
+          <a href="../autoware_mpc_lateral_controller/">Autoware mpc lateral controller</a>
+          
+            <label for="__nav_2_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_8">
           <span class="md-nav__icon md-icon"></span>
-          Autoware obstacle collision checker
+          Autoware mpc lateral controller
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoware_mpc_lateral_controller/model_predictive_control_algorithm/" class="md-nav__link">
+        MPC Algorithm
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -2090,14 +2090,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_operation_mode_transition_manager/">Autoware operation mode transition manager</a>
+          <a href="../autoware_obstacle_collision_checker/">Autoware obstacle collision checker</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_9">
           <span class="md-nav__icon md-icon"></span>
-          Autoware operation mode transition manager
+          Autoware obstacle collision checker
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2138,14 +2138,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_pid_longitudinal_controller/">Autoware pid longitudinal controller</a>
+          <a href="../autoware_operation_mode_transition_manager/">Autoware operation mode transition manager</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_10">
           <span class="md-nav__icon md-icon"></span>
-          Autoware pid longitudinal controller
+          Autoware operation mode transition manager
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2186,14 +2186,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_pure_pursuit/">Autoware pure pursuit</a>
+          <a href="../autoware_pid_longitudinal_controller/">Autoware pid longitudinal controller</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
-          Autoware pure pursuit
+          Autoware pid longitudinal controller
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2210,18 +2210,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_12" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" checked>
       
       
         
@@ -2233,15 +2233,15 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_shift_decider/">Autoware shift decider</a>
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Autoware predicted path checker</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_12">
           <span class="md-nav__icon md-icon"></span>
-          Autoware shift decider
+          Autoware predicted path checker
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2282,14 +2282,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_smart_mpc_trajectory_follower/">Autoware smart mpc trajectory follower</a>
+          <a href="../autoware_pure_pursuit/">Autoware pure pursuit</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_13">
           <span class="md-nav__icon md-icon"></span>
-          Autoware smart mpc trajectory follower
+          Autoware pure pursuit
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2330,14 +2330,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_trajectory_follower_base/">Autoware trajectory follower base</a>
+          <a href="../autoware_shift_decider/">Autoware shift decider</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_14">
           <span class="md-nav__icon md-icon"></span>
-          Autoware trajectory follower base
+          Autoware shift decider
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2373,82 +2373,22 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_trajectory_follower_node/">Autoware trajectory follower node</a>
-          
-            <label for="__nav_2_15">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
+          <a href="../autoware_smart_mpc_trajectory_follower/">Autoware smart mpc trajectory follower</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_15">
           <span class="md-nav__icon md-icon"></span>
-          Autoware trajectory follower node
+          Autoware smart mpc trajectory follower
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_15_2" >
-      
-      
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_2_15_2" id="__nav_2_15_2_label" tabindex="0">
-          Design
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_15_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_15_2">
-          <span class="md-nav__icon md-icon"></span>
-          Design
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../control/autoware_trajectory_follower_node/design/simple_trajectory_follower-design/" class="md-nav__link">
-        Simple Trajectory Follower
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
             
           
         </ul>
@@ -2486,14 +2426,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/autoware_vehicle_cmd_gate/">Autoware vehicle cmd gate</a>
+          <a href="../autoware_trajectory_follower_base/">Autoware trajectory follower base</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_16">
           <span class="md-nav__icon md-icon"></span>
-          Autoware vehicle cmd gate
+          Autoware trajectory follower base
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2529,22 +2469,82 @@
             
           
         
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/control_performance_analysis/">Control performance analysis</a>
+          <a href="../autoware_trajectory_follower_node/">Autoware trajectory follower node</a>
+          
+            <label for="__nav_2_17">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_17_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_17">
           <span class="md-nav__icon md-icon"></span>
-          Control performance analysis
+          Autoware trajectory follower node
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_17_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_17_2" id="__nav_2_17_2_label" tabindex="0">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_17_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_17_2">
+          <span class="md-nav__icon md-icon"></span>
+          Design
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoware_trajectory_follower_node/design/simple_trajectory_follower-design/" class="md-nav__link">
+        Simple Trajectory Follower
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
             
           
         </ul>
@@ -2582,14 +2582,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../control/predicted_path_checker/">Predicted path checker</a>
+          <a href="../autoware_vehicle_cmd_gate/">Autoware vehicle cmd gate</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
-          Predicted path checker
+          Autoware vehicle cmd gate
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2873,14 +2873,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../evaluator/kinematic_evaluator/">Kinematic evaluator</a>
+          <a href="../../evaluator/autoware_scenario_simulator_v2_adapter/">Autoware scenario simulator v2 adapter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
-          Kinematic evaluator
+          Autoware scenario simulator v2 adapter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2921,14 +2921,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../evaluator/scenario_simulator_v2_adapter/">Scenario simulator v2 adapter</a>
+          <a href="../../evaluator/kinematic_evaluator/">Kinematic evaluator</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
-          Scenario simulator v2 adapter
+          Kinematic evaluator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -10591,16 +10591,16 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
       
       
         
@@ -10625,7 +10625,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           Simulator
@@ -10660,7 +10660,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../autoware_carla_interface/">Autoware carla interface</a>
+          <a href="../../simulator/autoware_carla_interface/">Autoware carla interface</a>
           
         </div>
       
@@ -10708,14 +10708,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../dummy_perception_publisher/">Dummy perception publisher</a>
+          <a href="../../simulator/autoware_fault_injection/">Autoware fault injection</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10_2">
           <span class="md-nav__icon md-icon"></span>
-          Dummy perception publisher
+          Autoware fault injection
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -10732,18 +10732,18 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_3" >
       
       
         
@@ -10751,22 +10751,82 @@
             
           
         
+          
+        
       
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Fault injection</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../simulator/autoware_simple_planning_simulator/">Autoware simple planning simulator</a>
+          
+            <label for="__nav_10_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10_3">
           <span class="md-nav__icon md-icon"></span>
-          Fault injection
+          Autoware simple planning simulator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_3_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2" id="__nav_10_3_2_label" tabindex="0">
+          Docs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../simulator/autoware_simple_planning_simulator/docs/actuation_cmd_sim/" class="md-nav__link">
+        ACTUATION_CMD model
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
             
           
         </ul>
@@ -10804,14 +10864,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../learning_based_vehicle_model/">Learning based vehicle model</a>
+          <a href="../../simulator/autoware_vehicle_door_simulator/">Autoware vehicle door simulator</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10_4">
           <span class="md-nav__icon md-icon"></span>
-          Learning based vehicle model
+          Autoware vehicle door simulator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -10847,82 +10907,22 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../simple_planning_simulator/">Simple planning simulator</a>
-          
-            <label for="__nav_10_5">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
+          <a href="../../simulator/dummy_perception_publisher/">Dummy perception publisher</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10_5">
           <span class="md-nav__icon md-icon"></span>
-          Simple planning simulator
+          Dummy perception publisher
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_5_2" >
-      
-      
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_10_5_2" id="__nav_10_5_2_label" tabindex="0">
-          Docs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_5_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_10_5_2">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../simple_planning_simulator/docs/actuation_cmd_sim/" class="md-nav__link">
-        ACTUATION_CMD model
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
             
           
         </ul>
@@ -10960,14 +10960,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../tier4_dummy_object_rviz_plugin/">Tier4 dummy object rviz plugin</a>
+          <a href="../../simulator/learning_based_vehicle_model/">Learning based vehicle model</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10_6">
           <span class="md-nav__icon md-icon"></span>
-          Tier4 dummy object rviz plugin
+          Learning based vehicle model
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -11008,14 +11008,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../vehicle_door_simulator/">Vehicle door simulator</a>
+          <a href="../../simulator/tier4_dummy_object_rviz_plugin/">Tier4 dummy object rviz plugin</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_10_7">
           <span class="md-nav__icon md-icon"></span>
-          Vehicle door simulator
+          Tier4 dummy object rviz plugin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -11425,6 +11425,41 @@
       
         
           
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11_4" id="__nav_11_4_label" tabindex="0">
+          Autoware default adapi helpers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_4">
+          <span class="md-nav__icon md-icon"></span>
+          Autoware default adapi helpers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_4_1" >
+      
+      
+        
+          
             
           
         
@@ -11433,17 +11468,70 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/autoware_dummy_diag_publisher/">Autoware dummy diag publisher</a>
+          <a href="../../system/autoware_default_adapi_helpers/autoware_adapi_adaptors/">Autoware adapi adaptors</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_4">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_4_1">
           <span class="md-nav__icon md-icon"></span>
-          Autoware dummy diag publisher
+          Autoware adapi adaptors
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_4_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../system/autoware_default_adapi_helpers/autoware_automatic_pose_initializer/">Autoware automatic pose initializer</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Autoware automatic pose initializer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
             
           
         </ul>
@@ -11481,14 +11569,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/autoware_duplicated_node_checker/">Autoware duplicated node checker</a>
+          <a href="../../system/autoware_dummy_diag_publisher/">Autoware dummy diag publisher</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11_5">
           <span class="md-nav__icon md-icon"></span>
-          Autoware duplicated node checker
+          Autoware dummy diag publisher
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -11529,14 +11617,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/autoware_processing_time_checker/">Autoware processing time checker</a>
+          <a href="../../system/autoware_dummy_infrastructure/">Autoware dummy infrastructure</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11_6">
           <span class="md-nav__icon md-icon"></span>
-          Autoware processing time checker
+          Autoware dummy infrastructure
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -11577,14 +11665,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/autoware_topic_relay_controller/">Autoware topic relay controller</a>
+          <a href="../../system/autoware_duplicated_node_checker/">Autoware duplicated node checker</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11_7">
           <span class="md-nav__icon md-icon"></span>
-          Autoware topic relay controller
+          Autoware duplicated node checker
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -11625,14 +11713,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/component_state_monitor/">Component state monitor</a>
+          <a href="../../system/autoware_mrm_comfortable_stop_operator/">Autoware mrm comfortable stop operator</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_8_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11_8">
           <span class="md-nav__icon md-icon"></span>
-          Component state monitor
+          Autoware mrm comfortable stop operator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -11665,113 +11753,25 @@
       
         
           
-        
+            
           
         
       
       
-        <label class="md-nav__link" for="__nav_11_9" id="__nav_11_9_label" tabindex="0">
-          Default ad api helpers
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../system/autoware_mrm_emergency_stop_operator/">Autoware mrm emergency stop operator</a>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11_9">
           <span class="md-nav__icon md-icon"></span>
-          Default ad api helpers
+          Autoware mrm emergency stop operator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_9_1" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/default_ad_api_helpers/ad_api_adaptors/">Ad api adaptors</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_9_1_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_9_1">
-          <span class="md-nav__icon md-icon"></span>
-          Ad api adaptors
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_9_2" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/default_ad_api_helpers/automatic_pose_initializer/">Automatic pose initializer</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_9_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_9_2">
-          <span class="md-nav__icon md-icon"></span>
-          Automatic pose initializer
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
             
           
         </ul>
@@ -11804,6 +11804,198 @@
             
           
         
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../system/autoware_mrm_handler/">Autoware mrm handler</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_10">
+          <span class="md-nav__icon md-icon"></span>
+          Autoware mrm handler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_11" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../system/autoware_processing_time_checker/">Autoware processing time checker</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_11">
+          <span class="md-nav__icon md-icon"></span>
+          Autoware processing time checker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_12" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../system/autoware_topic_relay_controller/">Autoware topic relay controller</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_12">
+          <span class="md-nav__icon md-icon"></span>
+          Autoware topic relay controller
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_13" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../system/component_state_monitor/">Component state monitor</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_13">
+          <span class="md-nav__icon md-icon"></span>
+          Component state monitor
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14" >
+      
+      
+        
+          
+            
+          
+        
           
         
       
@@ -11813,14 +12005,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../system/diagnostic_graph_aggregator/">Diagnostic graph aggregator</a>
           
-            <label for="__nav_11_10">
+            <label for="__nav_11_14">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_10_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_10">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_14">
           <span class="md-nav__icon md-icon"></span>
           Diagnostic graph aggregator
         </label>
@@ -11841,7 +12033,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_10_2" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14_2" >
       
       
         
@@ -11851,13 +12043,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_10_2" id="__nav_11_10_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_14_2" id="__nav_11_14_2_label" tabindex="0">
           Doc
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_10_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_10_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_14_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_14_2">
           <span class="md-nav__icon md-icon"></span>
           Doc
         </label>
@@ -11876,7 +12068,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_10_2_1" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14_2_1" >
       
       
         
@@ -11894,13 +12086,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_10_2_1" id="__nav_11_10_2_1_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_14_2_1" id="__nav_11_14_2_1_label" tabindex="0">
           Format
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_10_2_1_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_10_2_1">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_14_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_14_2_1">
           <span class="md-nav__icon md-icon"></span>
           Format
         </label>
@@ -11975,7 +12167,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_10_2_1_5" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14_2_1_5" >
       
       
         
@@ -11983,13 +12175,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_10_2_1_5" id="__nav_11_10_2_1_5_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_14_2_1_5" id="__nav_11_14_2_1_5_label" tabindex="0">
           Edit
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_10_2_1_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_10_2_1_5">
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_14_2_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_14_2_1_5">
           <span class="md-nav__icon md-icon"></span>
           Edit
         </label>
@@ -12029,7 +12221,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_10_2_1_6" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14_2_1_6" >
       
       
         
@@ -12047,13 +12239,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_10_2_1_6" id="__nav_11_10_2_1_6_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_14_2_1_6" id="__nav_11_14_2_1_6_label" tabindex="0">
           Unit
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_10_2_1_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_10_2_1_6">
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_14_2_1_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_14_2_1_6">
           <span class="md-nav__icon md-icon"></span>
           Unit
         </label>
@@ -12170,7 +12362,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_10_2_2" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14_2_2" >
       
       
         
@@ -12178,13 +12370,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_10_2_2" id="__nav_11_10_2_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_14_2_2" id="__nav_11_14_2_2_label" tabindex="0">
           Tool
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_10_2_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_10_2_2">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_14_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_14_2_2">
           <span class="md-nav__icon md-icon"></span>
           Tool
         </label>
@@ -12240,7 +12432,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_11" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_15" >
       
       
         
@@ -12257,14 +12449,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../system/diagnostic_graph_utils/">Diagnostic graph utils</a>
           
-            <label for="__nav_11_11">
+            <label for="__nav_11_15">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_11_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_11">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_15">
           <span class="md-nav__icon md-icon"></span>
           Diagnostic graph utils
         </label>
@@ -12285,7 +12477,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_11_2" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_15_2" >
       
       
         
@@ -12293,13 +12485,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_11_2" id="__nav_11_11_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_15_2" id="__nav_11_15_2_label" tabindex="0">
           Doc
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_11_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_11_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_15_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_15_2">
           <span class="md-nav__icon md-icon"></span>
           Doc
         </label>
@@ -12318,7 +12510,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_11_2_1" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_15_2_1" >
       
       
         
@@ -12328,13 +12520,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_11_11_2_1" id="__nav_11_11_2_1_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_11_15_2_1" id="__nav_11_15_2_1_label" tabindex="0">
           Node
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_11_2_1_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_11_2_1">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_15_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_15_2_1">
           <span class="md-nav__icon md-icon"></span>
           Node
         </label>
@@ -12380,198 +12572,6 @@
     </li>
   
 
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_12" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/dummy_infrastructure/">Dummy infrastructure</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_12">
-          <span class="md-nav__icon md-icon"></span>
-          Dummy infrastructure
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_13" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/mrm_comfortable_stop_operator/">Mrm comfortable stop operator</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_13_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_13">
-          <span class="md-nav__icon md-icon"></span>
-          Mrm comfortable stop operator
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/mrm_emergency_stop_operator/">Mrm emergency stop operator</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_14_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_14">
-          <span class="md-nav__icon md-icon"></span>
-          Mrm emergency stop operator
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_15" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../system/mrm_handler/">Mrm handler</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_15_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_11_15">
-          <span class="md-nav__icon md-icon"></span>
-          Mrm handler
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
           
         </ul>
@@ -14242,43 +14242,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test" class="md-nav__link">
-    Test
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inner-workings-algorithms" class="md-nav__link">
-    Inner-workings / Algorithms
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inputs-outputs" class="md-nav__link">
-    Inputs / Outputs
-  </a>
-  
-    <nav class="md-nav" aria-label="Inputs / Outputs">
+    <nav class="md-nav" aria-label="Algorithm">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    Input
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    Output
+  <a href="#inner-algorithm" class="md-nav__link">
+    Inner Algorithm
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    Inputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs" class="md-nav__link">
+    Outputs
+  </a>
   
 </li>
       
@@ -14298,21 +14291,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#core-parameters" class="md-nav__link">
-    Core Parameters
+  <a href="#collision-checker-parameters" class="md-nav__link">
+    Collision Checker Parameters
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assumptions-known-limits" class="md-nav__link">
-    Assumptions / Known limits
-  </a>
   
 </li>
       
@@ -14334,19 +14320,45 @@
   
 
 
-<div><h1 id="fault_injection">fault_injection<a class="headerlink" href="#fault_injection" title="Permanent link">#</a></h1>
+<div><h1 id="predicted-path-checker">Predicted Path Checker<a class="headerlink" href="#predicted-path-checker" title="Permanent link">#</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">#</a></h2>
-<p>This package is used to convert pseudo system faults from PSim to Diagnostics and notify Autoware.
-The component diagram is as follows:</p>
-<p><img alt="Component diagram of fault_injection package" src="img/component.drawio.svg"></p>
-<h2 id="test">Test<a class="headerlink" href="#test" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>install/setup.bash
-<span class="nb">cd</span><span class="w"> </span>fault_injection
-launch_test<span class="w"> </span>test/test_fault_injection_node.test.py
-</code></pre></div>
-<h2 id="inner-workings-algorithms">Inner-workings / Algorithms<a class="headerlink" href="#inner-workings-algorithms" title="Permanent link">#</a></h2>
-<h2 id="inputs-outputs">Inputs / Outputs<a class="headerlink" href="#inputs-outputs" title="Permanent link">#</a></h2>
-<h3 id="input">Input<a class="headerlink" href="#input" title="Permanent link">#</a></h3>
+<p>The Predicted Path Checker package is designed for autonomous vehicles to check the predicted path generated by control
+modules. It handles potential collisions that the planning module might not be able to handle and that in the brake
+distance. In case of collision in brake distance, the package will send a diagnostic message labeled "ERROR" to alert
+the system to send emergency and in the case of collisions in outside reference trajectory, it sends pause request to
+pause interface to make the vehicle stop.</p>
+<p><img alt="general-structure.png" src="images/general-structure.png"></p>
+<h2 id="algorithm">Algorithm<a class="headerlink" href="#algorithm" title="Permanent link">#</a></h2>
+<p>The package algorithm evaluates the predicted trajectory against the reference trajectory and the predicted objects in
+the environment. It checks for potential collisions and, if necessary, generates an appropriate response to avoid them (
+emergency or pause request).</p>
+<h3 id="inner-algorithm">Inner Algorithm<a class="headerlink" href="#inner-algorithm" title="Permanent link">#</a></h3>
+<p><img alt="FlowChart.png" src="images/FlowChart.png"></p>
+<p><strong>cutTrajectory() -&gt;</strong> It cuts the predicted trajectory with input length. Length is calculated by multiplying the
+velocity
+of ego vehicle with "trajectory_check_time" parameter and "min_trajectory_length".</p>
+<p><strong>filterObstacles() -&gt;</strong> It filters the predicted objects in the environment. It filters the objects which are not in
+front of the vehicle and far away from predicted trajectory.</p>
+<p><strong>checkTrajectoryForCollision() -&gt;</strong> It checks the predicted trajectory for collision with the predicted objects. It
+calculates both polygon of trajectory points and predicted objects and checks intersection of both polygons. If there is
+an intersection, it calculates the nearest collision point. It returns the nearest collision point of polygon and the
+predicted object. It also checks predicted objects history which are intersect with the footprint before to avoid
+unexpected behaviors. Predicted objects history stores the objects if it was detected below the "chattering_threshold"
+seconds ago.</p>
+<p>If the "enable_z_axis_obstacle_filtering" parameter is set to true, it filters the predicted objects in the Z-axis by
+using "z_axis_filtering_buffer". If the object does not intersect with the Z-axis, it is filtered out.</p>
+<p><img alt="Z_axis_filtering.png" src="images/Z_axis_filtering.png"></p>
+<p><strong>calculateProjectedVelAndAcc() -&gt;</strong> It calculates the projected velocity and acceleration of the predicted object on
+predicted trajectory's collision point's axes.</p>
+<p><strong>isInBrakeDistance() -&gt;</strong> It checks if the stop point is in brake distance. It gets relative velocity and
+acceleration of ego vehicle with respect to the predicted object. It calculates the brake distance, if the point in
+brake distance, it returns true.</p>
+<p><strong>isItDiscretePoint() -&gt;</strong> It checks if the stop point on predicted trajectory is discrete point or not. If it is not
+discrete point, planning should handle the stop.</p>
+<p><strong>isThereStopPointOnRefTrajectory() -&gt;</strong> It checks if there is a stop point on reference trajectory. If there is a stop
+point before the stop index, it returns true. Otherwise, it returns false, and node is going to call pause interface to
+make the vehicle stop.</p>
+<h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
@@ -14357,13 +14369,38 @@ launch_test<span class="w"> </span>test/test_fault_injection_node.test.py
 </thead>
 <tbody>
 <tr>
-<td><code>~/input/simulation_events</code></td>
-<td><code>tier4_simulation_msgs::msg::SimulationEvents</code></td>
-<td>simulation events</td>
+<td><code>~/input/reference_trajectory</code></td>
+<td><code>autoware_planning_msgs::msg::Trajectory</code></td>
+<td>Reference trajectory</td>
+</tr>
+<tr>
+<td><code>~/input/predicted_trajectory</code></td>
+<td><code>autoware_planning_msgs::msg::Trajectory</code></td>
+<td>Predicted trajectory</td>
+</tr>
+<tr>
+<td><code>~/input/objects</code></td>
+<td><code>autoware_perception_msgs::msg::PredictedObject</code></td>
+<td>Dynamic objects in the environment</td>
+</tr>
+<tr>
+<td><code>~/input/odometry</code></td>
+<td><code>nav_msgs::msg::Odometry</code></td>
+<td>Odometry message of vehicle to get current velocity</td>
+</tr>
+<tr>
+<td><code>~/input/current_accel</code></td>
+<td><code>geometry_msgs::msg::AccelWithCovarianceStamped</code></td>
+<td>Current acceleration</td>
+</tr>
+<tr>
+<td><code>/control/vehicle_cmd_gate/is_paused</code></td>
+<td><code>tier4_control_msgs::msg::IsPaused</code></td>
+<td>Current pause state of the vehicle</td>
 </tr>
 </tbody>
 </table>
-<h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">#</a></h3>
+<h2 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
@@ -14374,20 +14411,156 @@ launch_test<span class="w"> </span>test/test_fault_injection_node.test.py
 </thead>
 <tbody>
 <tr>
+<td><code>~/debug/marker</code></td>
+<td><code>visualization_msgs::msg::MarkerArray</code></td>
+<td>Marker for visualization</td>
+</tr>
+<tr>
+<td><code>~/debug/virtual_wall</code></td>
+<td><code>visualization_msgs::msg::MarkerArray</code></td>
+<td>Virtual wall marker for visualization</td>
+</tr>
+<tr>
+<td><code>/control/vehicle_cmd_gate/set_pause</code></td>
+<td><code>tier4_control_msgs::srv::SetPause</code></td>
+<td>Pause service to make the vehicle stop</td>
+</tr>
+<tr>
 <td><code>/diagnostics</code></td>
-<td><code>diagnostic_msgs::msg::DiagnosticArray</code></td>
-<td>Dummy diagnostics</td>
+<td><code>diagnostic_msgs::msg::DiagnosticStatus</code></td>
+<td>Diagnostic status of vehicle</td>
 </tr>
 </tbody>
 </table>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
-<p>None.</p>
 <h3 id="node-parameters">Node Parameters<a class="headerlink" href="#node-parameters" title="Permanent link">#</a></h3>
-<p>None.</p>
-<h3 id="core-parameters">Core Parameters<a class="headerlink" href="#core-parameters" title="Permanent link">#</a></h3>
-<p>None.</p>
-<h2 id="assumptions-known-limits">Assumptions / Known limits<a class="headerlink" href="#assumptions-known-limits" title="Permanent link">#</a></h2>
-<p>TBD.</p></div>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>update_rate</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The update rate [Hz]</td>
+<td align="left">10.0</td>
+</tr>
+<tr>
+<td align="left"><code>delay_time</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">he time delay considered for the emergency response [s]</td>
+<td align="left">0.17</td>
+</tr>
+<tr>
+<td align="left"><code>max_deceleration</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">Max deceleration for ego vehicle to stop [m/s^2]</td>
+<td align="left">1.5</td>
+</tr>
+<tr>
+<td align="left"><code>resample_interval</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">Interval for resampling trajectory [m]</td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="left"><code>stop_margin</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The stopping margin [m]</td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="left"><code>ego_nearest_dist_threshold</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The nearest distance threshold for ego vehicle [m]</td>
+<td align="left">3.0</td>
+</tr>
+<tr>
+<td align="left"><code>ego_nearest_yaw_threshold</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The nearest yaw threshold for ego vehicle [rad]</td>
+<td align="left">1.046</td>
+</tr>
+<tr>
+<td align="left"><code>min_trajectory_check_length</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The minimum trajectory check length in meters [m]</td>
+<td align="left">1.5</td>
+</tr>
+<tr>
+<td align="left"><code>trajectory_check_time</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The trajectory check time in seconds. [s]</td>
+<td align="left">3.0</td>
+</tr>
+<tr>
+<td align="left"><code>distinct_point_distance_threshold</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The distinct point distance threshold [m]</td>
+<td align="left">0.3</td>
+</tr>
+<tr>
+<td align="left"><code>distinct_point_yaw_threshold</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The distinct point yaw threshold [deg]</td>
+<td align="left">5.0</td>
+</tr>
+<tr>
+<td align="left"><code>filtering_distance_threshold</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">It ignores the objects if distance is higher than this [m]</td>
+<td align="left">1.5</td>
+</tr>
+<tr>
+<td align="left"><code>use_object_prediction</code></td>
+<td align="left"><code>bool</code></td>
+<td align="left">If true, node predicts current pose of the objects wrt delta time [-]</td>
+<td align="left">true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="collision-checker-parameters">Collision Checker Parameters<a class="headerlink" href="#collision-checker-parameters" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>width_margin</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The width margin for collision checking [Hz]</td>
+<td align="left">0.2</td>
+</tr>
+<tr>
+<td align="left"><code>chattering_threshold</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The chattering threshold for collision detection [s]</td>
+<td align="left">0.2</td>
+</tr>
+<tr>
+<td align="left"><code>z_axis_filtering_buffer</code></td>
+<td align="left"><code>double</code></td>
+<td align="left">The Z-axis filtering buffer [m]</td>
+<td align="left">0.3</td>
+</tr>
+<tr>
+<td align="left"><code>enable_z_axis_obstacle_filtering</code></td>
+<td align="left"><code>bool</code></td>
+<td align="left">A boolean flag indicating if Z-axis obstacle filtering is enabled</td>
+<td align="left">false</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
@@ -14414,7 +14587,7 @@ launch_test<span class="w"> </span>test/test_fault_injection_node.test.py
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../dummy_perception_publisher/" class="md-footer__link md-footer__link--prev" aria-label="Previous: dummy_perception_publisher" rel="prev">
+          <a href="../autoware_pid_longitudinal_controller/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PID Longitudinal Controller" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -14423,20 +14596,20 @@ launch_test<span class="w"> </span>test/test_fault_injection_node.test.py
                 Previous
               </span>
               <div class="md-ellipsis">
-                dummy_perception_publisher
+                PID Longitudinal Controller
               </div>
             </div>
           </a>
         
         
           
-          <a href="../learning_based_vehicle_model/" class="md-footer__link md-footer__link--next" aria-label="Next: Learned Model" rel="next">
+          <a href="../autoware_pure_pursuit/" class="md-footer__link md-footer__link--next" aria-label="Next: Pure Pursuit Controller" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Learned Model
+                Pure Pursuit Controller
               </div>
             </div>
             <div class="md-footer__button md-icon">
