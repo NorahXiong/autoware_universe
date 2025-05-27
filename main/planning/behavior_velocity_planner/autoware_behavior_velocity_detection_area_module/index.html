@@ -13900,17 +13900,17 @@
 <p>If it needs X meters (e.g. 0.5 meters) to stop once the vehicle starts moving due to the poor vehicle control performance, the vehicle goes over the stopping position that should be strictly observed when the vehicle starts to moving in order to approach the near stop point (e.g. 0.3 meters away).</p>
 <p>This module has parameter <code>hold_stop_margin_distance</code> in order to prevent from these redundant restart. If the vehicle is stopped within <code>hold_stop_margin_distance</code> meters from stop point of the module (_front_to_stop_line &lt; hold_stop_margin_distance), the module judges that the vehicle has already stopped for the module's stop point and plans to keep stopping current position even if the vehicle is stopped due to other factors.</p>
 <figure>
-<p><img alt="example" src="restart_prevention.svg" width="1000">
+<p><img alt="example" src="docs/restart_prevention.svg" width="1000">
   </p>
 <figcaption>parameters</figcaption>
 </figure>
 <figure>
-<p><img alt="example" src="restart.svg" width="1000">
+<p><img alt="example" src="docs/restart.svg" width="1000">
   </p>
 <figcaption>outside the hold_stop_margin_distance</figcaption>
 </figure>
 <figure>
-<p><img alt="example" src="keep_stopping.svg" width="1000">
+<p><img alt="example" src="docs/keep_stopping.svg" width="1000">
   </p>
 <figcaption>inside the hold_stop_margin_distance</figcaption>
 </figure></div>
