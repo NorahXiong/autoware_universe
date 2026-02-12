@@ -1,25 +1,22 @@
 name: build-test-tidy-pr
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-      - labeled
+  push:
+    branches:
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: true
 
 jobs:
-  require-label:
-    uses: autowarefoundation/autoware-github-actions/.github/workflows/require-label.yaml@v1
-    with:
-      label: run:build-and-test-differential
+  # require-label:
+  #   uses: autowarefoundation/autoware-github-actions/.github/workflows/require-label.yaml@v1
+  #   with:
+  #     label: run:build-and-test-differential
 
   check-if-cuda-job-is-needed:
-    needs: require-label
+    # needs: require-label
     runs-on: ubuntu-latest
     outputs:
       cuda_job_is_needed: ${{ steps.check.outputs.any_changed }}
@@ -42,8 +39,8 @@ jobs:
 
   build-and-test-differential:
     if: ${{ always() }}
-    needs:
-      - require-label
+    # needs:
+    #   - require-label
     uses: ./.github/workflows/build-and-test-differential.yaml
     with:
       container: ghcr.io/autowarefoundation/autoware:universe-devel
@@ -53,8 +50,8 @@ jobs:
 
   build-and-test-packages-above-differential:
     if: ${{ always() }}
-    needs:
-      - require-label
+    # needs:
+    #   - require-label
     uses: ./.github/workflows/build-and-test-packages-above-differential.yaml
     with:
       container: ghcr.io/autowarefoundation/autoware:universe-devel
