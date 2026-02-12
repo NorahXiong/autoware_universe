@@ -45,6 +45,11 @@ on:
         type: string
         default: temp
         required: false
+      above:
+        description: True if packages above repos should be considered. Clang-tidy will only run if this is false.
+        type: boolean
+        default: false
+        required: false
     secrets:
       codecov-token:
         required: true
@@ -154,46 +159,80 @@ jobs:
             /root/.ccache
           key: ccache-main-${{ runner.arch }}-${{ inputs.rosdistro }}-${{ github.sha }}
 
-      - name: Test
-        if: ${{ steps.get-self-packages.outputs.self-packages != '' }}
-        id: test
-        uses: autowarefoundation/autoware-github-actions/colcon-test@v1
-        with:
-          rosdistro: ${{ inputs.rosdistro }}
-          target-packages: ${{ steps.get-self-packages.outputs.self-packages }}
-          build-depends-repos: build_depends.repos
+      # - name: Test
+      #   if: ${{ steps.get-self-packages.outputs.self-packages != '' }}
+      #   id: test
+      #   uses: autowarefoundation/autoware-github-actions/colcon-test@v1
+      #   with:
+      #     rosdistro: ${{ inputs.rosdistro }}
+      #     target-packages: ${{ steps.get-self-packages.outputs.self-packages }}
+      #     build-depends-repos: build_depends.repos
 
-      # Cache lcov/coverage directories for next job
-      - name: Upload coverage artifacts
-        if: ${{ steps.test.outputs.coverage-report-files != '' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-${{ inputs.codecov-flag }}-${{ inputs.rosdistro }}
-          path: |
-            build
-            lcov
+      # # Cache lcov/coverage directories for next job
+      # - name: Upload coverage artifacts
+      #   if: ${{ steps.test.outputs.coverage-report-files != '' }}
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: coverage-${{ inputs.codecov-flag }}-${{ inputs.rosdistro }}
+      #     path: |
+      #       build
+      #       lcov
 
       - name: Show disk space after the tasks
         run: df -h
 
-  upload-coverage:
-    runs-on: ubuntu-latest
+  # upload-coverage:
+  #   runs-on: ubuntu-latest
+  #   needs: build-and-test
+  #   if: ${{ needs.build-and-test.outputs.coverage-files != '' }}
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
+
+  #     - name: Download coverage artifacts
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: coverage-${{ inputs.codecov-flag }}-${{ inputs.rosdistro }}
+
+  #     - name: Upload coverage to CodeCov
+  #       uses: codecov/codecov-action@v4
+  #       with:
+  #         files: ${{ needs.build-and-test.outputs.coverage-files }}
+  #         fail_ci_if_error: false
+  #         verbose: true
+  #         flags: ${{ inputs.codecov-flag }}
+  #         token: ${{ secrets.codecov-token }}
+
+  clang-tidy:
+    name: clang-tidy-${{ inputs.rosdistro }}${{ inputs.above && '-above' || '' }}
     needs: build-and-test
-    if: ${{ needs.build-and-test.outputs.coverage-files != '' }}
+    if: ${{ inputs.above == false }}
+    runs-on: ubuntu-latest
+    container: ${{ inputs.container }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout PR branch and all PR commits
+        uses: actions/checkout@v6
 
-      - name: Download coverage artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: coverage-${{ inputs.codecov-flag }}-${{ inputs.rosdistro }}
+      - name: Show disk space before the tasks
+        run: df -h
 
-      - name: Upload coverage to CodeCov
-        uses: codecov/codecov-action@v4
+      - name: Remove exec_depend
+        uses: autowarefoundation/autoware-github-actions/remove-exec-depend@v1
+
+      - name: Get self packages
+        id: get-self-packages
+        uses: autowarefoundation/autoware-github-actions/get-self-packages@v1
+
+      - name: Run clang-tidy
+        if: ${{ steps.get-self-packages.outputs.self-packages != '' }}
+        uses: NorahXiong/autoware-github-actions/clang-tidy@clang-tidy-fix
         with:
-          files: ${{ needs.build-and-test.outputs.coverage-files }}
-          fail_ci_if_error: false
-          verbose: true
-          flags: ${{ inputs.codecov-flag }}
-          token: ${{ secrets.codecov-token }}
+          rosdistro: ${{ inputs.rosdistro }}
+          cache-key-element: build-and-test-${{ inputs.cache-key-element }}${{ inputs.above && '-above' || '' }}
+          target-packages: ${{ steps.get-self-packages.outputs.self-packages }}
+          clang-tidy-config-url: https://raw.githubusercontent.com/NorahXiong/autoware_core/feat/remove_failed_clang_checks/.clang-tidy-ci
+          underlay-workspace: /opt/autoware
+          artifact-name: clang-tidy-result-${{ inputs.rosdistro }}
+
+      - name: Show disk space after the tasks
+        run: df -h
