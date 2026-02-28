@@ -27,6 +27,10 @@ ament_auto_add_library(${PROJECT_NAME} SHARED
   src/marker_utils/utils.cpp
 )
 
+target_compile_options(${PROJECT_NAME} PRIVATE
+  -Wno-error=maybe-uninitialized
+)
+
 target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC
   ${EIGEN3_INCLUDE_DIR}
 )
